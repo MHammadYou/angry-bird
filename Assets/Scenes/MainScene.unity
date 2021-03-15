@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 23921259}
   - component: {fileID: 23921258}
   - component: {fileID: 23921260}
+  - component: {fileID: 23921261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -213,7 +214,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23921255}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -261,7 +262,21 @@ SpringJoint2D:
   m_AutoConfigureDistance: 1
   m_Distance: 0.058309443
   m_DampingRatio: 0
-  m_Frequency: 10
+  m_Frequency: 2
+--- !u!114 &23921261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23921255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90317566a4f4af74ebb452314e574320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 23921258}
+  releaseTime: 0.15
 --- !u!1 &415191955
 GameObject:
   m_ObjectHideFlags: 0
